@@ -8,16 +8,18 @@
       crossorigin="anonymous"
     ></script>
     <title>Chat | KaKao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column"></div>
-      <span class="status-bar__clock">13:54</span>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
       <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
-        <span class="status-var__battery-leverl">100%</span>
+        <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
@@ -33,7 +35,9 @@
           <i class="far fa-comment"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog"></i>
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
     </header>
@@ -42,15 +46,21 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="images/avatar.jpg" />
-              <div class="chat__content">
-                <span class="chat__username">Lynn</span>
-                <span class="chat__preview">Going home</span>
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="m-avatar friend__avatar" src="images/avatar.jpg" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Lynn
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">yesterday</span>
+              <div class="friend__column">
+                <span class="chat__timestamp">March 8</span>
+              </div>
             </div>
           </a>
         </li>
@@ -65,6 +75,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i
           ></a>
         </li>
@@ -80,5 +91,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!!</span>
+    </div>
   </body>
 </html>

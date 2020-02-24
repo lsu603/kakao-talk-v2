@@ -7,17 +7,19 @@
       src="https://kit.fontawesome.com/d8d9af4980.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>More | KaKao Clone</title>
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column"></div>
-      <span class="status-bar__clock">13:54</span>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
       <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
-        <span class="status-var__battery-leverl">100%</span>
+        <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
@@ -60,23 +62,26 @@
         </div>
         <ul class="more__btn-list">
           <li class="more__btn">
-            <span class="more__but-icon"></span>
-            <span class="more__btn-title">
+            <span class="more__but-icon">
               <i class="far fa-smile fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
               Emoticons
             </span>
           </li>
           <li class="more__btn">
-            <span class="more__but-icon"></span>
-            <span class="more__btn-title">
+            <span class="more__but-icon">
               <i class="fas fa-brush fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
               Themes
             </span>
           </li>
           <li class="more__btn">
-            <span class="more__but-icon"></span>
-            <span class="more__btn-title">
+            <span class="more__but-icon">
               <i class="fab fa-kickstarter-k fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
               Account
             </span>
           </li>
@@ -116,7 +121,8 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
-            <i class="far fa-comment"></i
+            <div class="nav__badge">8</div>
+            <i class="fas fa-comment"></i
           ></a>
         </li>
         <li class="nav__list-item">
@@ -131,5 +137,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!!</span>
+    </div>
   </body>
 </html>
